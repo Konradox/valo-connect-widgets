@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <ClientSideComponentInstance
+        Title="CustomConnectWidgets"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ComponentId="1e729257-c956-4db1-89a7-4b8f75d0eca3"
+        Properties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
+    </ClientSideComponentInstance>
+</Elements>

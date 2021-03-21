@@ -1,0 +1,51 @@
+{
+  "id": "1e729257-c956-4db1-89a7-4b8f75d0eca3",
+  "alias": "CustomConnectWidgetsApplicationCustomize",
+  "componentType": "Extension",
+  "extensionType": "ApplicationCustomizer",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "loaderConfig": {
+    "internalModuleBaseUrls": [
+      "<!-- PATH TO CDN -->"
+    ],
+    "entryModuleId": "custom-connect-widgets-application-customizer",
+    "scriptResources": {
+      "custom-connect-widgets-application-customizer": {
+        "type": "path",
+        "path": "custom-connect-widgets-application-customizer_de779b56d4f72aac7cf8.js"
+      },
+      "tslib": {
+        "type": "component",
+        "id": "01c4df03-e775-48cb-aa14-171ee5199a15",
+        "version": "1.10.0"
+      },
+      "@microsoft/sp-application-base": {
+        "type": "component",
+        "id": "4df9bb86-ab0a-4aab-ab5f-48bf167048fb",
+        "version": "1.12.0"
+      },
+      "@microsoft/sp-lodash-subset": {
+        "type": "component",
+        "id": "73e1dc6c-8441-42cc-ad47-4bd3659f8a3a",
+        "version": "1.12.0"
+      },
+      "react": {
+        "type": "component",
+        "id": "0d910c1c-13b9-4e1c-9aa4-b008c5e42d7d",
+        "version": "16.9.0"
+      },
+      "react-dom": {
+        "type": "component",
+        "id": "aa0a46ec-1505-43cd-a44a-93f3a5aa460a",
+        "version": "16.9.0"
+      },
+      "@microsoft/decorators": {
+        "type": "component",
+        "id": "f97266fb-ccb7-430e-9384-4124d05295d3",
+        "version": "1.12.0"
+      }
+    }
+  }
+}
