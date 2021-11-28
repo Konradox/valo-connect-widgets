@@ -2,17 +2,17 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
   "version": "2.0",
   "bundles": {
-    "custom-connect-widgets-application-customizer": {
+    "custom-widgets-application-customizer": {
       "components": [
         {
-          "entrypoint": "./lib/extensions/customConnectWidgets/CustomConnectWidgetsApplicationCustomizer.js",
-          "manifest": "./src/extensions/customConnectWidgets/CustomConnectWidgetsApplicationCustomizer.manifest.json"
+          "entrypoint": "./lib/extensions/customWidgets/CustomWidgetsApplicationCustomizer.js",
+          "manifest": "./src/extensions/customWidgets/CustomWidgetsApplicationCustomizer.manifest.json"
         }
       ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "CustomConnectWidgetsApplicationCustomizerStrings": "lib/extensions/customConnectWidgets/loc/{locale}.js"
+    "CustomWidgetsApplicationCustomizerStrings": "lib/extensions/customWidgets/loc/{locale}.js"
   }
 }

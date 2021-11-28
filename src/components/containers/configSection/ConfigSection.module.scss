@@ -1,0 +1,18 @@
+.configSection {
+	margin: 1em 0;
+	padding: 1em;
+	.titleRow {
+		height: 20px;
+		margin: 0 0 1em 0;
+		:global{
+			.valo__tooltip{
+				vertical-align: top;
+			}
+		}
+		.configPanelTitle {
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 19px;
+		}
+	}
+}

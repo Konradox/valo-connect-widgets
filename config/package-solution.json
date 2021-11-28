@@ -1,8 +1,8 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "valo-connect-widgets-client-side-solution",
-    "id": "8b707f83-12c6-4e93-a31d-3c8824994650",
+    "name": "custom-connect-widgets-client-side-solution",
+    "id": "8952f522-d043-46ff-b2fb-0da7b11312e2",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
@@ -12,13 +12,13 @@
       "websiteUrl": "",
       "privacyUrl": "",
       "termsOfUseUrl": "",
-      "mpnId": ""
+      "mpnId": "Undefined-1.13.1"
     },
     "features": [
       {
         "title": "Application Extension - Deployment of custom action.",
         "description": "Deploys a custom action with ClientSideComponentId association",
-        "id": "298aa71e-d8bd-4813-9a41-d92f1bb8635c",
+        "id": "39a40efa-63e7-4e73-b1e9-04f57528cd38",
         "version": "1.0.0.0",
         "assets": {
           "elementManifests": [
@@ -30,6 +30,6 @@
     ]
   },
   "paths": {
-    "zippedPackage": "solution/valo-connect-widgets.sppkg"
+    "zippedPackage": "solution/custom-connect-widgets.sppkg"
   }
 }
