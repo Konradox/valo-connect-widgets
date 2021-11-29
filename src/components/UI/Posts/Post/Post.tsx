@@ -13,7 +13,7 @@ export const Post = (props: { post: WordpressPost }) => {
 					maxWidth: "50px",
 				}}
 			/>
-			<a href={props.post.link}>{props.post.title.rendered.replace('&#8211;', '-').replace('&#038;', '&')}</a>
+			<a href={props.post.link}>{props.post.title.rendered.replace('&#8211;', '-').replace('&#038;', '&').replace('&#8230;', '…')}</a>
 		</div>
 	);
 };

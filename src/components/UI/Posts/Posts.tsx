@@ -1,6 +1,6 @@
 import React from 'react';
 import { WordpressPost } from '../../../model/Post';
-import { Post } from './Post/Post';
+import { Post } from './post/Post';
 
 export const Posts = (props: {posts: WordpressPost[]}) => {
     const renderPosts = () => {

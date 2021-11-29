@@ -2,8 +2,8 @@ import React from "react";
 import { IIconProps } from "@microsoft/office-ui-fabric-react-bundle";
 import { ConnectWidgetSize } from "@valo/extensibility";
 import { ConnectWidget } from "@valo/extensibility/lib/models/connectWidget/ConnectWidget";
-import { WordpressConfig, WordpressProps } from "../components/containers/WordpressWidget/WordpressConfig";
-import { Wordpress } from "../components/containers/WordpressWidget/Wordpress";
+import { WordpressConfig, WordpressProps } from "../components/containers/wordpressWidget/WordpressConfig";
+import { Wordpress } from "../components/containers/wordpressWidget/Wordpress";
 
 export class WordpressWidget implements ConnectWidget<WordpressProps> {
 	public title: string = "Wordpress";

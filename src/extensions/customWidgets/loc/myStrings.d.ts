@@ -1,8 +1,11 @@
 declare interface ICustomWidgetsApplicationCustomizerStrings {
-  DomainNotSupported: string;
+	DomainNotSupported: string;
+	Domain: string;
+	PostsCount: string;
+	WidgetTitle: string;
 }
 
-declare module 'CustomWidgetsApplicationCustomizerStrings' {
-  const strings: ICustomWidgetsApplicationCustomizerStrings;
-  export = strings;
+declare module "CustomWidgetsApplicationCustomizerStrings" {
+	const strings: ICustomWidgetsApplicationCustomizerStrings;
+	export = strings;
 }
