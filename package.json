@@ -16,7 +16,7 @@
     "@microsoft/sp-application-base": "1.13.1",
     "@microsoft/sp-core-library": "1.13.1",
     "@microsoft/sp-dialog": "1.13.1",
-    "@valo/extensibility": "^1.10.0-66955fc4552b0623870bf27584931ee41f3e9d86"
+    "@valo/extensibility": "^1.10.0-fa2311c9435d82b7526b7c61ca3fb2bc1759f9cc"
   },
   "devDependencies": {
     "@microsoft/sp-build-web": "1.13.1",
