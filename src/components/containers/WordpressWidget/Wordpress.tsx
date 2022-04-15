@@ -3,16 +3,13 @@ import { WordpressPost } from "../../../model/Post";
 import { WordpressService } from "../../../services/WordpressService";
 import { Posts } from "../../UI/Posts/Posts";
 import { WordpressProps } from "./WordpressConfig";
-import { Provider as FluentUIThemeProvider } from "@fluentui/react-northstar/dist/es/components/Provider/Provider";
-import { RendererContext } from "@fluentui/react-bindings/dist/es/renderer/RendererContext";
-import { createEmotionRenderer } from "@fluentui/react-northstar-emotion-renderer";
-import { ThemeManager } from "../../../managers/ThemeManager";
 import styles from "./Wordpress.module.scss";
 import { ExclamationCircleIcon } from "@fluentui/react-northstar";
 import * as strings from "CustomWidgetsApplicationCustomizerStrings";
+import { ThemeProviderWrapper } from "../../UI/ThemeProviderWrapper";
 
 export const Wordpress = (props: WordpressProps) => {
-	const [posts, setPosts] = useState<WordpressPost>([]);
+	const [posts, setPosts] = useState<WordpressPost[]>([]);
 	const [error, setError] = useState<string>("");
 
 	useEffect(async () => {
@@ -35,10 +32,8 @@ export const Wordpress = (props: WordpressProps) => {
 	};
 
 	return (
-		<div className={styles.widgetContainer}>
-			<RendererContext.Provider value={createEmotionRenderer()}>
-				<FluentUIThemeProvider theme={ThemeManager.getTheme()}>{renderContent()}</FluentUIThemeProvider>
-			</RendererContext.Provider>
-		</div>
+		<ThemeProviderWrapper className={styles.widgetContainer}>
+			{renderContent()}
+		</ThemeProviderWrapper>
 	);
 };

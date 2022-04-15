@@ -11,7 +11,8 @@ export class WordpressWidget implements ConnectWidget<WordpressProps> {
 	public size: ConnectWidgetSize = ConnectWidgetSize.Single;
 	public description?: string = "Displays latest Wordpress posts";
 	public iconProps?: IIconProps = { iconName: "Blog" };
-	public category?: string = "External";
+	public category?: string = "Elnathsoft";
+
 	public widgetComponentsFactory = (config: WordpressProps) => {
 		return [
 			{

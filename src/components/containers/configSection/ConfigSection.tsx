@@ -2,11 +2,11 @@ import * as React from "react";
 import { Text } from "@fluentui/react-northstar/dist/es/components/Text/Text";
 import styles from "./ConfigSection.module.scss";
 
-export interface IConfigSection {
+export interface ConfigSection {
 	title?: string;
 }
 
-export function ConfigSection(props: React.PropsWithChildren<IConfigSection>) {
+export function ConfigSection(props: React.PropsWithChildren<ConfigSection>) {
 	return (
 		<div className={styles.configSection}>
 			<div className={styles.titleRow}>

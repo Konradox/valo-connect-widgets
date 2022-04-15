@@ -1,0 +1,14 @@
+$my-dashboard-pink: rgba(193, 81, 127, 1);
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid "[theme: accent, default: #{$my-dashboard-pink}]";
+    margin: 4px 0;
+    padding: 3px;
+    .values {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}

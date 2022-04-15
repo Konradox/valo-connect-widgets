@@ -1,5 +1,6 @@
 import { ApplicationCustomizerContext } from '@microsoft/sp-application-base';
 import { ConnectWidget, ConnectWidgetService } from '@valo/extensibility';
+import { CryptoWidget } from '../widgets/CryptoWidget';
 import { WordpressWidget } from '../widgets/WordpressWidget';
 
 export class WidgetLoader {
@@ -16,6 +17,7 @@ export class WidgetLoader {
     }
 
     private widgets: ConnectWidget<any>[] = [
-        new WordpressWidget()
+        new WordpressWidget(),
+        new CryptoWidget()
     ];
 }
