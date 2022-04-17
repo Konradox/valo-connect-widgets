@@ -1,5 +1,6 @@
 import React from "react";
 import { Cryptocurrency } from "../../../model/Cryptocurrency";
+import { CURRENCIES } from "../../containers/cryptoWidget/CryptoConfig";
 import { Crypto } from "./Crypto/Crypto";
 
 export interface CryptocurrenciesProps {
@@ -8,10 +9,18 @@ export interface CryptocurrenciesProps {
 
 export const Cryptocurrencies = (props: CryptocurrenciesProps) => {
 	const items = [];
-	props.rates.forEach((value: Cryptocurrency, key: string) => {
-		items.push(
-            <Crypto name={key} change={value.priceChangePercent} rate={value.lastPrice}/>			
-		);
+	CURRENCIES.forEach(currency => {
+		const info = props.rates.get(currency);
+		if (info) {
+			items.push(
+				<Crypto
+					name={currency}
+					change={info.priceChangePercent}
+					rate={info.lastPrice}
+					symbol={info.symbol.substring(0, info.symbol.length - 4)}
+				/>
+			);
+		}
 	});
 	return <>{items}</>;
 };
