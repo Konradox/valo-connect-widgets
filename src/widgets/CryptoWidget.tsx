@@ -6,7 +6,7 @@ import { CryptoConfig, CryptoProps } from "../components/containers/cryptoWidget
 import { CryptoRates } from "../components/containers/cryptoWidget/CryptoRates";
 
 export class CryptoWidget implements ConnectWidget<CryptoProps> {
-	public title: string = "Cryptocurrency";
+	public title: string = "Cryptocurrencies";
 	public id: string = "kr-crypto-widget";
 	public size: ConnectWidgetSize = ConnectWidgetSize.Single;
 	public description?: string = "Shows the cryptocurrency rates";

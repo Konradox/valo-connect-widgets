@@ -6,10 +6,10 @@ import { WordpressConfig, WordpressProps } from "../components/containers/wordpr
 import { Wordpress } from "../components/containers/wordpressWidget/Wordpress";
 
 export class WordpressWidget implements ConnectWidget<WordpressProps> {
-	public title: string = "Wordpress";
+	public title: string = "WordPress";
 	public id: string = "kr-wordpress-widget";
 	public size: ConnectWidgetSize = ConnectWidgetSize.Single;
-	public description?: string = "Displays latest Wordpress posts";
+	public description?: string = "Displays latest WordPress posts";
 	public iconProps?: IIconProps = { iconName: "Blog" };
 	public category?: string = "Elnathsoft";
 

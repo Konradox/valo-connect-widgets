@@ -52,10 +52,8 @@ export const Crypto = (props: CryptocurrencyProps) => {
 			</div>
 			<div className={styles.values}>
 				<Text content={`$${Number(Number(props.rate).toFixed(2)).toLocaleString()}`} size="large" />
-				<Text content={getChange()} className={getChangeStyles()}/>
+				<Text content={getChange()} className={getChangeStyles()} />
 			</div>
 		</div>
 	);
-
-	
 };

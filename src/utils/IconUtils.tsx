@@ -1,5 +1,5 @@
-import { registerIcons } from "office-ui-fabric-react/lib/Styling";
 import * as React from "react";
+import { registerIcons } from "office-ui-fabric-react/lib/Styling";
 
 export class IconUtils {
 	public static registerIcons(): void {

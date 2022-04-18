@@ -18,7 +18,6 @@ export interface WordpressProps {
 export const WordpressConfig = (props: ConnectWidgetConfigurationProps<WordpressProps>) => {
 	const [server, setServer] = useState<string>(props.widgetConfiguration ? props.widgetConfiguration.server : "");
 	const [postCount, setPostsCount] = useState<number>(props.widgetConfiguration ? props.widgetConfiguration.postsCount : "");
-	const [title, setTitle] = useState<string>(props.widgetConfiguration ? props.widgetConfiguration.title : "");
 
 	const serverChange = (_element, data: InputProps) => {
 		setServer(data.value);
@@ -30,17 +29,9 @@ export const WordpressConfig = (props: ConnectWidgetConfigurationProps<Wordpress
 		props.onConfigurationUpdated({ ...props.widgetConfiguration, postsCount: data.value as number });
 	};
 
-	const titleChange = (_element, data: InputProps) => {
-		setTitle(data.value);
-		props.onConfigurationUpdated({ ...props.widgetConfiguration, title: data.value as string });
-	};
-
 	return (
 		<RendererContext.Provider value={createEmotionRenderer()}>
 			<FluentUIThemeProvider theme={ThemeManager.getTheme()}>
-				<ConfigSection title={strings.WidgetTitle}>
-					<Input onChange={titleChange} value={title} />
-				</ConfigSection>
 				<ConfigSection title={strings.Domain}>
 					<Input onChange={serverChange} value={server} />
 				</ConfigSection>

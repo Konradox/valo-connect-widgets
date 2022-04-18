@@ -21,7 +21,7 @@ export const Post = (props: { post: WordpressPost }) => {
 				}}
 			/>
 			<a href={props.post.link} target="_blank">
-				{props.post.title.rendered.replace("&#8211;", "-").replace("&#038;", "&").replace("&#8230;", "…").replace("&nbsp;", " ").replace("&#8217;", "'").replace("&#8216;", "'").replace("&#8220;", '"').replace("&#8221;", '"').replace("&#039;", "'")}
+				{props.post.title.rendered.replace("&#8211;", "-").replace("&#038;", "&").replace("&#8230;", "…").replace("&nbsp;", " ").replace("&#8217;", "'").replace("&#8216;", "'").replace("&#8220;", '"').replace("&#8221;", '"').replace("&#039;", "'").replace("&#8220;", '“')}
 			</a>
 		</div>
 	);

@@ -6,6 +6,7 @@ import { CryptoProps, CURRENCIES } from "./CryptoConfig";
 import { CryptoService } from "../../../services/CryptoService";
 import { Cryptocurrency } from "../../../model/Cryptocurrency";
 import { Cryptocurrencies } from "../../UI/Cryptocurrencies/Cryptocurrencies";
+import styles from "../WordpressWidget/Wordpress.module.scss";
 
 export const CryptoRates = (props: CryptoProps) => {
 	const [rates, setRates] = useState<Map<string, Cryptocurrency>>(new Map<string, Cryptocurrency>());
@@ -28,7 +29,7 @@ export const CryptoRates = (props: CryptoProps) => {
 	const renderContent = () => {
 		if (error) {
 			return (
-				<div>
+				<div className={styles.error}>
 					<ExclamationCircleIcon outline />
 					{strings.CouldNotFetchData}
 				</div>
@@ -37,5 +38,5 @@ export const CryptoRates = (props: CryptoProps) => {
 		return <Cryptocurrencies rates={rates} />;
 	};
 
-	return <ThemeProviderWrapper>{renderContent()}</ThemeProviderWrapper>;
+	return <ThemeProviderWrapper className={styles.widgetContainer}>{renderContent()}</ThemeProviderWrapper>;
 };

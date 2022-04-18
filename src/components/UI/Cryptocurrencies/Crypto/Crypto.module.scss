@@ -39,8 +39,18 @@ $my-dashboard-pink: rgba(193, 81, 127, 1);
         .changeNegative {
             color: #dc3545;
         }
-        .changeNeutral {
-            color: #ffc107;
+    }
+}
+
+:global(.valo-theme-contrast) {
+    .container {
+        .values {
+            .changePositive {
+                color: #dff6dd;
+            }
+            .changeNegative {
+                color: #fde7e9;
+            }
         }
     }
 }
