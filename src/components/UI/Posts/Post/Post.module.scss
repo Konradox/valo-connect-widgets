@@ -1,0 +1,28 @@
+$my-dashboard-pink: rgba(193, 81, 127, 1);
+
+.post {
+    margin: 10px 0;
+    display: flex;
+    :global {
+        a, a:link, a:visited, a:active {
+            color: "[theme: accent, default: #{$my-dashboard-pink}]";
+            text-decoration: none;
+        }
+        a:hover {
+            color: "[theme: accent, default: #{$my-dashboard-pink}]";
+            text-decoration: underline;
+        }
+    }
+    a {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        line-height: 1.2;
+        height: 50px;
+    }
+    img {
+        margin-right: 10px;
+    }
+}

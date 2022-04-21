@@ -1,0 +1,14 @@
+$my-dashboard-white-grey: rgba(177,177,177,1);
+
+.widgetContainer {
+    overflow-y: auto;
+    scrollbar-color: $my-dashboard-white-grey !important;
+    padding: 0 !important;
+
+    .error {
+        size: 1em;
+        & * {
+            margin: 3px;
+        }
+    }
+}
